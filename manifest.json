@@ -17,6 +17,7 @@
 		"default_icon": "icon.png"
 	},
 	"web_accessible_resources": [
-		"css/style.css"
+		"css/style.css",
+		"html/index.html"
 	]
 }
