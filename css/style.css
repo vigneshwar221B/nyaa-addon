@@ -1,4 +1,7 @@
-body{
-    display: flex;
-    background-color: cornflowerblue;
+body {
+  display: flex;
+  background-color: #262626;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
 }
