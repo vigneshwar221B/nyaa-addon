@@ -18,6 +18,7 @@
 	},
 	"web_accessible_resources": [
 		"css/style.css",
-		"html/index.html"
+		"html/index.html",
+		"js/script.js"
 	]
 }
