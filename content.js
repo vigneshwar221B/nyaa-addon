@@ -5,7 +5,8 @@ const addButtons = (rows) => {
 
     selectedRows.forEach((element) => {
       const magnetUri = element.cells[2].children[1].href;
-      const newLink = `<a target="_blank" href="${baseUrl}?muri=${magnetUri}"><i class="fa fa-fw fa-play"></i></a>`;
+      const torrentLink = element.cells[2].children[0].href;
+      const newLink = `<a target="_blank" href="${baseUrl}?muri=${magnetUri}&xs=${torrentLink}"><i class="fa fa-fw fa-play"></i></a>`;
       element.cells[2].innerHTML = element.cells[2].innerHTML + newLink;
     });
   });
