@@ -21,7 +21,7 @@ const addButtons = (rows) => {
   rows.forEach((row) => {
     const selectedRows = document.querySelectorAll(`tr.${row}`);
 
-    selectedRows.forEach((element) => {
+    selectedRows?.forEach((element) => {
       const magnetUri = element.cells[2].children[1].href;
       const torrentLink = element.cells[2].children[0].href;
 
@@ -36,12 +36,14 @@ const addButtons = (rows) => {
     });
   });
 
-  console.log("pika: added new buttons");
+  console.log("added new buttons");
 };
 
 const addButton = () => {
   let baseUrl = chrome.extension.getURL("html/index.html");
   const links = document.querySelector("div.panel-footer.clearfix");
+
+  if(!links) return;
 
   const torrentLink = links.children[0].href;
   const magnetUri = links.children[1].href;
